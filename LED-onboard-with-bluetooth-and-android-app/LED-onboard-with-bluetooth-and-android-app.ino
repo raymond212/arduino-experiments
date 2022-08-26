@@ -8,13 +8,11 @@ void setup() {
 }
 
 void loop() {
-  if (BT.available()) {
-    int state = BT.read();
-//    Serial.println(state);
-    if (state == 1) {
+  if (BT.available() > 0) {
+    char val = BT.read();
+    if (val == '1') {
       digitalWrite(13, HIGH);
-    } 
-    if (state == 0) {
+    } else if (val == '0') {
       digitalWrite(13, LOW);
     }
   }
