@@ -1,3 +1,3 @@
 # arduino-experiments
 
-A repository of arduino sketches for experimenting with sensors and motors. 
+A repository of Arduino sketches for experimenting with sensors and motors. 
